@@ -1,0 +1,260 @@
+:root {
+    --color1: #00c1b5;
+    --color2: #ff651a;
+    --color3: #ffbe00;
+    --color4: #5d7be5;
+    --color5: #e30512;
+}
+
+* {
+    transition: all .5s linear;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: hidden;
+}
+
+.up {
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.up .main .header {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    position: absolute;
+    padding: 1rem;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.up .main .header .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main .book .img {
+    padding: none;
+    background-color: #1d3fbb;
+    width: 25%;
+}
+
+.main .book img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.main .header h1 {
+    font-size: 32px;
+    color: #252525;
+}
+
+.main .header a {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: none;
+    color: #252525;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main .tengah {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: transparent;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.main .tengah .img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .tengah .img img {
+    width: 100%;
+}
+
+.main .tengah .swiper .swiper-wrapper .swiper-slide .img a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #252525;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main .tengah .img p, .main .tengah .img span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main .footer {
+    position: absolute;
+    background: transparent;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0rem 2.5rem;
+    bottom: 0;
+}
+
+.main .footer .left {
+    height: auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main .footer .left p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.main .footer .left a:nth-child(2) {
+    font-size: 18px;
+    color: #252525;
+    text-transform: none;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.main .footer .left p {
+    text-align: left;
+}
+
+.main .footer .right {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    gap: .5rem;
+    text-align: right;
+    width: 30%;
+}
+
+.main .footer .right a {
+    color: #252525;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.up .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.up .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.up .swiper-slide:nth-child(2) {
+    background-color: var(--color1);
+}
+
+.up .swiper-slide:nth-child(3) {
+    background-color: var(--color2);
+}
+
+.up .swiper-slide:nth-child(4) {
+    background-color: var(--color3);
+}
+
+.up .swiper-slide:nth-child(5) {
+    background-color: var(--color4);
+}
+
+.up .swiper-slide:nth-child(6) {
+    background-color: var(--color5);
+}
